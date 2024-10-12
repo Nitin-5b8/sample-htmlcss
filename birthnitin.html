@@ -19,7 +19,7 @@
         .bday-container {
             width: auto;
             height: auto;
-            /* background-color: red; */
+            background-color: greenyellow; 
             position: absolute;
             top: 50%;
             left: 50%;
@@ -28,8 +28,8 @@
             transform: translate(-50%, -50%);
             border: 1px solid rgba(128, 128, 128, 0.405);
             border-radius: 6px;
-            color: white;
-            background-image: url(photos/Royal_Enfield.jpg) !important;
+            color: red;
+            background-image: url(C:\Users\Kohin\Downloads\army.jpeg) !important;
         }
 
         .added-field {
@@ -45,7 +45,7 @@
             width: auto;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             height: auto;
-            /* background-color: red; */
+            background-color: orchid;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -250,7 +250,7 @@
 <body>
     <div class="bday-container">
         <h1> Birthday Wishes</h1>
-        <h3>Hello Madam! <br />Please enter 4 digit password</h3>
+        <h3>Hello Sir! <br />Please enter the password</h3>
         <h4>And touch your enfield...!!! </h4>
         <div class="form-group added-field">
             <input onchange="checkPassword(event)" type="password" style="color:black" class="form-control"
@@ -278,8 +278,8 @@
             <div style="text-align: center;margin-left: 20rem;">
                 <div class="text" id="spinner">
                     <div>
-                        <span>NITIN RAJPUT</span>
-                        <span> 🦋</span>
+                        <span>NITIN </span>
+                        <span>👑</span>
                     </div>
                 </div>
             </div>
@@ -311,10 +311,10 @@
     var password = '2004';
     let sounds = [
         new Howl({
-            src:['C:\Users\Kohin\Desktop\sample-htmlcss\IMAGES\movie.mpeg']
+            src:["C:\Users\Kohin\Desktop\sample-htmlcss\[iSongs.info] 03 - Chuttamalle.mp3"]
         }),
         new Howl({
-            src:['C:\Users\Kohin\Desktop\sample-htmlcss\IMAGES\chuttamalle_devara.mp3']
+            src:["C:\Users\Kohin\Desktop\sample-htmlcss\[iSongs.info] 03 - Chuttamalle.mp3"]
         }),
         new Howl({
             src: ['c:\Users\Kohin\Desktop\sample-htmlcss\IMAGES\WhatsApp Audio 2024-10-11 at 10.52.09 PM.mpeg']
@@ -354,6 +354,16 @@
             wrngPassword.style.display='inline-block';
         }
     }
+
+    // Add error handling
+sounds.forEach((sound) => {
+  sound.on('loaderror', () => {
+    console.error('Error loading audio file');
+  });
+  sound.on('playerror', () => {
+    console.error('Error playing audio file');
+  });
+});
 </script>
 
 </html>
