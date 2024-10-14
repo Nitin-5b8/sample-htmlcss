@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ca94bb
+}
+h1{
+    color: rgb(242, 18, 18);
+}
+.nitin-container{
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #06729d6a;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+.input-group {
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+    width: 40%;
+    height: 40px;
+    background-color: rgb(6, 72, 23);
+    color:rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}

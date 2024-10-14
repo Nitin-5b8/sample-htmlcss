@@ -259,9 +259,9 @@
         <label class="wrongPassword" style="color:rgb(167, 7, 7)">Wrong Password !! Try Again</label>
     </div>
     <div class="bday-container-result">
-        <h2>Birthday wishes</h2>
+        <h2>INDIAN ARMY</h2>
         <h3 class="bday-container-text" style="color:rgb(96, 94, 94)"></h3>
-        <span class="heart wishes-date"><span class="text-spin">Happy &nbsp;</span><span class="text-spin">Birthday
+        <span class="heart wishes-date"><span class="text-spin">Service &nbsp;</span><span class="text-spin">before self
                 &nbsp;</span>
 
             <div style="margin-top:1rem;margin-bottom: 2rem;">
@@ -272,8 +272,8 @@
                 </svg>
             </div><br />
             <div>
-                <img class="img-style" src='C:\Users\Kohin\Desktop\sample-htmlcss\IMAGES\IMG-20240128-WA0017 (3) (2).jpg' width="250px" height="300px" style="box-shadow: -4px -3px 6px 1px rgb(0 0 0 / 10%);
-                border-radius: 8px;border:3px solid transparent;margin-top: -10px;" />
+                <img alt="img-style" src='C:\Users\Kohin\Desktop\sample-htmlcss\IMAGES\IMG-20240128-WA0017 (3) (2).jpg' class="img-style" width="250px" height="300px" style="box-shadow: -4px -3px 6px 1px rgb(0 0 0 / 10%);
+                border-radius: 8px;border:3px solid transparent;margin-top: -10px;" onclick="changeImage" />
               </div>
             <div style="text-align: center;margin-left: 20rem;">
                 <div class="text" id="spinner">
@@ -293,10 +293,17 @@
 
 </body>
 <script>
+    function changeImage() {
+    if (document.getElementById("imgClickAndChange").src == "C:/Users/Kohin/Pictures/Saved Pictures/IMG_20240902_235812.jpg"){
+        document.getElementById("imgClickAndChange").src = "C:/Users/Kohin/Pictures/Saved Pictures/IMG_20240404_111737.jpg";
+    } else {
+        document.getElementById("imgClickAndChange").src = "C:/Users/Kohin/Pictures/Saved Pictures/Snapchat-1787754831.jpg";
+    }
+}
     var currentIndex = 0;
 
     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    var birthday = new Date(2004, 2, 21);
+    var birthday = new Date(1995, 6, 16);
 
     console.log(birthday.toLocaleDateString("en-US", options));
     var bdayelement = document.getElementsByClassName('bday-container-text')[0];
@@ -311,19 +318,19 @@
     var password = '2004';
     let sounds = [
         new Howl({
-            src:["C:\Users\Kohin\Desktop\sample-htmlcss\[iSongs.info] 03 - Chuttamalle.mp3"]
+            src:["audios/[iSongs.info] 03 - Chuttamalle.mp3"]
         }),
         new Howl({
-            src:["C:\Users\Kohin\Desktop\sample-htmlcss\[iSongs.info] 03 - Chuttamalle.mp3"]
+            src:["audios/WhatsApp Audio 2024-10-11 at 10.52.14 PM.mpeg"]
         }),
         new Howl({
-            src: ['c:\Users\Kohin\Desktop\sample-htmlcss\IMAGES\WhatsApp Audio 2024-10-11 at 10.52.09 PM.mpeg']
+            src: ['IMAGES/WhatsApp Audio 2024-10-11 at 10.52.09 PM.mpeg']
         }),
         new Howl({
-            src: ['C:\Users\Kohin\Downloads\WhatsApp Audio 2024-10-11 at 10.52.24 PM.mpeg']
+            src: ['audios/WhatsApp Audio 2024-10-11 at 10.52.24 PM.mpeg']
         }),
         new Howl({
-            src: ['C:\Users\Kohin\Downloads\IMG-20240128-WA0017 (3).jpg']
+            src: ['Downloads/IMG-20240128-WA0017 (3).jpg']
         })
     ]
 
@@ -367,3 +374,4 @@ sounds.forEach((sound) => {
 </script>
 
 </html>
+
